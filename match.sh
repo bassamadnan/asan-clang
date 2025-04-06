@@ -30,6 +30,7 @@ for VERSION_DIR in "$BASEDIR"/*; do
     
     # Create a file for the results
     echo "Version: $VERSION" > "$RESULT_FILE"
+    echo "flag_name, options_present, sanitizer_present" >> "$RESULT_FILE"
     
     # Check for each flag
     for i in "${!FLAGS[@]}"; do
