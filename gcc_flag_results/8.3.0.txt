@@ -1,0 +1,6 @@
+Version: 8.3.0
+flag_name, present_in_common_opt
+fsanitize=, 1
+fno-omit-frame-pointer, 1
+fsanitize-recover=, 1
+fsanitize-address-use-after-scope, 1

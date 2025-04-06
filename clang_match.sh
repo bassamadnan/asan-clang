@@ -17,7 +17,7 @@ ALTERNATIVES=(
 )
 
 BASEDIR="clang_history"
-RESULTS_DIR="flag_results"
+RESULTS_DIR="clang_flag_results"
 
 # Create results directory
 mkdir -p "$RESULTS_DIR"
