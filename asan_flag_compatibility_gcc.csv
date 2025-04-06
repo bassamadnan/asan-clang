@@ -1,0 +1,62 @@
+Compiler ID,Compiler Name,-fsanitize=address Support,-fsanitize=address Error,-fno-omit-frame-pointer Support,-fno-omit-frame-pointer Error,-fsanitize-recover=address Support,-fsanitize-recover=address Error,-Wall -Wextra Support,-Wall -Wextra Error,-fsanitize-address-use-after-scope Support,-fsanitize-address-use-after-scope Error,All Flags Support,All Flags Error
+cg346,gcc 3.4.6,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",0,<source>:1:25: warning: no newline at end of file,0,"cc1: error: unrecognized command line option ""-fsanitize-recover=address""",0,<source>:1:25: warning: no newline at end of file,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",0,"cc1: error: unrecognized command line option ""-fsanitize=address"""
+cg404,gcc 4.0.4,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",0,<source>:1:25: warning: no newline at end of file,0,"cc1: error: unrecognized command line option ""-fsanitize-recover=address""",0,<source>:1:25: warning: no newline at end of file,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",0,"cc1: error: unrecognized command line option ""-fsanitize=address"""
+cg412,gcc 4.1.2,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",0,<source>:1:25: warning: no newline at end of file,0,"cc1: error: unrecognized command line option ""-fsanitize-recover=address""",0,<source>:1:25: warning: no newline at end of file,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",0,"cc1: error: unrecognized command line option ""-fsanitize=address"""
+cg447,gcc 4.4.7,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",1,,0,"cc1: error: unrecognized command line option ""-fsanitize-recover=address""",1,,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",0,"cc1: error: unrecognized command line option ""-fsanitize=address"""
+cg453,gcc 4.5.3,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",1,,0,"cc1: error: unrecognized command line option ""-fsanitize-recover=address""",1,,0,"cc1: error: unrecognized command line option ""-fsanitize=address""",0,"cc1: error: unrecognized command line option ""-fsanitize=address"""
+cg464,gcc 4.6.4,0,cc1: error: unrecognized command line option '-fsanitize=address',1,,0,cc1: error: unrecognized command line option '-fsanitize-recover=address',1,,0,cc1: error: unrecognized command line option '-fsanitize=address',0,cc1: error: unrecognized command line option '-fsanitize=address'
+cg471,gcc 4.7.1,0,gcc: error: unrecognized command line option '-fsanitize=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize=address',0,gcc: error: unrecognized command line option '-fsanitize=address'
+cg472,gcc 4.7.2,0,gcc: error: unrecognized command line option '-fsanitize=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize=address',0,gcc: error: unrecognized command line option '-fsanitize=address'
+cg473,gcc 4.7.3,0,gcc: error: unrecognized command line option '-fsanitize=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize=address',0,gcc: error: unrecognized command line option '-fsanitize=address'
+cg474,gcc 4.7.4,0,gcc: error: unrecognized command line option '-fsanitize=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize=address',0,gcc: error: unrecognized command line option '-fsanitize=address'
+cg481,gcc 4.8.1,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg482,gcc 4.8.2,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg483,gcc 4.8.3,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg484,gcc 4.8.4,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg485,gcc 4.8.5,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg490,gcc 4.9.0,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg491,gcc 4.9.1,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg492,gcc 4.9.2,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg493,gcc 4.9.3,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg494,gcc 4.9.4,1,,1,,0,gcc: error: unrecognized command line option '-fsanitize-recover=address',1,,0,gcc: error: unrecognized command line option '-fsanitize-address-use-after-scope',0,gcc: error: unrecognized command line option '-fsanitize-recover=address'
+cg510,gcc 5.1,1,,1,,0,[01m[Kcc1:[m[K [01;31m[Kerror: [m[K-fsanitize-recover=address is not supported,1,,0,[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kunrecognized command line option '[01m[K-fsanitize-address-use-after-scope[m[K',0,[01m[Kcc1:[m[K [01;31m[Kerror: [m[K-fsanitize-recover=address is not supported
+cg520,gcc 5.2,1,,1,,0,[01m[Kcc1:[m[K [01;31m[Kerror: [m[K-fsanitize-recover=address is not supported,1,,0,[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kunrecognized command line option '[01m[K-fsanitize-address-use-after-scope[m[K',0,[01m[Kcc1:[m[K [01;31m[Kerror: [m[K-fsanitize-recover=address is not supported
+cg530,gcc 5.3,1,,1,,0,[01m[Kcc1:[m[K [01;31m[Kerror: [m[K-fsanitize-recover=address is not supported,1,,0,[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kunrecognized command line option '[01m[K-fsanitize-address-use-after-scope[m[K',0,[01m[Kcc1:[m[K [01;31m[Kerror: [m[K-fsanitize-recover=address is not supported
+cg540,gcc 5.4,1,,1,,0,[01m[Kcc1:[m[K [01;31m[Kerror: [m[K-fsanitize-recover=address is not supported,1,,0,[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kunrecognized command line option '[01m[K-fsanitize-address-use-after-scope[m[K',0,[01m[Kcc1:[m[K [01;31m[Kerror: [m[K-fsanitize-recover=address is not supported
+cg6,gcc 6.1,1,,1,,1,,1,,0,[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kunrecognized command line option '[01m[K-fsanitize-address-use-after-scope[m[K',1,
+cg62,gcc 6.2,1,,1,,1,,1,,0,[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kunrecognized command line option '[01m[K-fsanitize-address-use-after-scope[m[K',1,
+cg63,gcc 6.3,1,,1,,1,,1,,0,[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kunrecognized command line option '[01m[K-fsanitize-address-use-after-scope[m[K',1,
+cg65,gcc 6.5,1,,1,,1,,1,,0,[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kunrecognized command line option '[01m[K-fsanitize-address-use-after-scope[m[K',1,
+cg71,gcc 7.1,1,,1,,1,,1,,1,,1,
+cg72,gcc 7.2,1,,1,,1,,1,,1,,1,
+cg73,gcc 7.3,1,,1,,1,,1,,1,,1,
+cg74,gcc 7.4,1,,1,,1,,1,,1,,1,
+cg75,gcc 7.5,1,,1,,1,,1,,1,,1,
+cg81,gcc 8.1,1,,1,,1,,1,,1,,1,
+cg82,gcc 8.2,1,,1,,1,,1,,1,,1,
+cg83,gcc 8.3,1,,1,,1,,1,,1,,1,
+cg84,gcc 8.4,1,,1,,1,,1,,1,,1,
+cg85,gcc 8.5,1,,1,,1,,1,,1,,1,
+cg91,gcc 9.1,1,,1,,1,,1,,1,,1,
+cg92,gcc 9.2,1,,1,,1,,1,,1,,1,
+cg93,gcc 9.3,1,,1,,1,,1,,1,,1,
+cg94,gcc 9.4,1,,1,,1,,1,,1,,1,
+cg95,gcc 9.5,1,,1,,1,,1,,1,,1,
+cg101,gcc 10.1,1,,1,,1,,1,,1,,1,
+cg102,gcc 10.2,1,,1,,1,,1,,1,,1,
+cg103,gcc 10.3,1,,1,,1,,1,,1,,1,
+cg104,gcc 10.4,1,,1,,1,,1,,1,,1,
+cg105,gcc 10.5,1,,1,,1,,1,,1,,1,
+cg111,gcc 11.1,1,,1,,1,,1,,1,,1,
+cg112,gcc 11.2,1,,1,,1,,1,,1,,1,
+cg113,gcc 11.3,1,,1,,1,,1,,1,,1,
+cg114,gcc 11.4,1,,1,,1,,1,,1,,1,
+cg121,gcc 12.1,1,,1,,1,,1,,1,,1,
+cg122,gcc 12.2,1,,1,,1,,1,,1,,1,
+cg123,gcc 12.3,1,,1,,1,,1,,1,,1,
+cg124,gcc 12.4,1,,1,,1,,1,,1,,1,
+cg131,gcc 13.1,1,,1,,1,,1,,1,,1,
+cg132,gcc 13.2,1,,1,,1,,1,,1,,1,
+cg133,gcc 13.3,1,,1,,1,,1,,1,,1,
+cg141,gcc 14.1,1,,1,,1,,1,,1,,1,
+cg142,gcc 14.2,1,,1,,1,,1,,1,,1,

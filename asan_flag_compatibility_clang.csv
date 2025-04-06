@@ -1,0 +1,45 @@
+Compiler ID,Compiler Name,-fsanitize=address Support,-fsanitize=address Error,-fno-omit-frame-pointer Support,-fno-omit-frame-pointer Error,-fsanitize-recover=address Support,-fsanitize-recover=address Error,-Wall -Wextra Support,-Wall -Wextra Error,-fsanitize-address-use-after-scope Support,-fsanitize-address-use-after-scope Error,All Flags Support,All Flags Error
+cclang30,clang 3.0.0,0,clang: warning: argument unused during compilation: '-fsanitize=address',1,,0,clang: warning: argument unused during compilation: '-fsanitize-recover=address',1,,0,clang: warning: argument unused during compilation: '-fsanitize=address',0,clang: warning: argument unused during compilation: '-fsanitize=address'
+cclang31,clang 3.1,0,clang: warning: argument unused during compilation: '-gdwarf-4',0,clang: warning: argument unused during compilation: '-gdwarf-4',0,clang: warning: argument unused during compilation: '-gdwarf-4',0,clang: warning: argument unused during compilation: '-gdwarf-4',0,clang: warning: argument unused during compilation: '-gdwarf-4',0,clang: warning: argument unused during compilation: '-gdwarf-4'
+cclang32,clang 3.2,1,,1,,0,clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-fsanitize-recover=address'[0m,1,,0,clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-fsanitize-address-use-after-scope'[0m,0,clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-fsanitize-recover=address'[0m
+cclang33,clang 3.3,1,,1,,0,clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-fsanitize-recover=address'[0m,1,,0,clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-fsanitize-address-use-after-scope'[0m,0,clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-fsanitize-recover=address'[0m
+cclang341,clang 3.4.1,1,,1,,0,clang: [0;1;31merror: [0m[1munknown argument: '-fsanitize-recover=address'[0m,1,,0,clang: [0;1;31merror: [0m[1munknown argument: '-fsanitize-address-use-after-scope'[0m,0,clang: [0;1;31merror: [0m[1munknown argument: '-fsanitize-recover=address'[0m
+cclang350,clang 3.5,1,,1,,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-recover=address'[0m,1,,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-address-use-after-scope'[0m,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-recover=address'[0m
+cclang351,clang 3.5.1,1,,1,,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-recover=address'[0m,1,,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-address-use-after-scope'[0m,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-recover=address'[0m
+cclang352,clang 3.5.2,1,,1,,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-recover=address'[0m,1,,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-address-use-after-scope'[0m,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-recover=address'[0m
+cclang36x,clang 3.6,1,,1,,0,clang: [0;1;31merror: [0munsupported argument 'address' to option 'fsanitize-recover='[0m,1,,0,clang: [0;1;31merror: [0munknown argument: '-fsanitize-address-use-after-scope'[0m,0,clang: [0;1;31merror: [0munsupported argument 'address' to option 'fsanitize-recover='[0m
+cclang37x,clang 3.7,1,,1,,0,clang-3.7: [0;1;31merror: [0munsupported argument 'address' to option 'fsanitize-recover='[0m,1,,0,clang-3.7: [0;1;31merror: [0munknown argument: '-fsanitize-address-use-after-scope'[0m,0,clang-3.7: [0;1;31merror: [0munsupported argument 'address' to option 'fsanitize-recover='[0m
+cclang371,clang 3.7.1,1,,1,,0,clang-3.7: [0;1;31merror: [0munsupported argument 'address' to option 'fsanitize-recover='[0m,1,,0,clang-3.7: [0;1;31merror: [0munknown argument: '-fsanitize-address-use-after-scope'[0m,0,clang-3.7: [0;1;31merror: [0munsupported argument 'address' to option 'fsanitize-recover='[0m
+cclang380,clang 3.8,1,,1,,1,,1,,0,clang-3.8: [0;1;31merror: [0munknown argument: '-fsanitize-address-use-after-scope'[0m,1,
+cclang381,clang 3.8.1,1,,1,,1,,1,,0,clang-3.8: [0;1;31merror: [0munknown argument: '-fsanitize-address-use-after-scope'[0m,1,
+cclang390,clang 3.9.0,1,,1,,1,,1,,1,,1,
+cclang391,clang 3.9.1,1,,1,,1,,1,,1,,1,
+cclang400,clang 4.0.0,1,,1,,1,,1,,1,,1,
+cclang401,clang 4.0.1,1,,1,,1,,1,,1,,1,
+cclang500,clang 5.0.0,1,,1,,1,,1,,1,,1,
+cclang501,clang 5.0.1,1,,1,,1,,1,,1,,1,
+cclang502,clang 5.0.2,1,,1,,1,,1,,1,,1,
+cclang600,clang 6.0.0,1,,1,,1,,1,,1,,1,
+cclang601,clang 6.0.1,1,,1,,1,,1,,1,,1,
+cclang700,clang 7.0.0,1,,1,,1,,1,,1,,1,
+cclang701,clang 7.0.1,1,,1,,1,,1,,1,,1,
+cclang710,clang 7.1.0,1,,1,,1,,1,,1,,1,
+cclang800,clang 8.0.0,1,,1,,1,,1,,1,,1,
+cclang801,clang 8.0.1,1,,1,,1,,1,,1,,1,
+cclang900,clang 9.0.0,1,,1,,1,,1,,1,,1,
+cclang901,clang 9.0.1,1,,1,,1,,1,,1,,1,
+cclang1000,clang 10.0.0,1,,1,,1,,1,,1,,1,
+cclang1001,clang 10.0.1,1,,1,,1,,1,,1,,1,
+cclang1100,clang 11.0.0,1,,1,,1,,1,,1,,1,
+cclang1101,clang 11.0.1,1,,1,,1,,1,,1,,1,
+cclang1200,clang 12.0.0,1,,1,,1,,1,,1,,1,
+cclang1201,clang 12.0.1,1,,1,,1,,1,,1,,1,
+cclang1300,clang 13.0.0,1,,1,,1,,1,,1,,1,
+cclang1301,clang 13.0.1,1,,1,,1,,1,,1,,1,
+cclang1400,clang 14.0.0,1,,1,,1,,1,,1,,1,
+cclang1500,clang 15.0.0,1,,1,,1,,1,,1,,1,
+cclang1600,clang 16.0.0,1,,1,,1,,1,,1,,1,
+cclang1701,clang 17.0.1,1,,1,,1,,1,,1,,1,
+cclang1810,clang 18.1.0,1,,1,,1,,1,,1,,1,
+cclang1910,clang 19.1.0,1,,1,,1,,1,,1,,1,
+cclang2010,clang 20.1.0,1,,1,,1,,1,,1,,1,
