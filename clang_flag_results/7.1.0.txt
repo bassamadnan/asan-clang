@@ -2,5 +2,5 @@ Version: 7.1.0
 flag_name, options_present, sanitizer_present
 fsanitize=address, 0, 1
 fno-omit-frame-pointer, 1, 0
-fsanitize-recover=address, 0, 0
+fsanitize-recover, 1, 1
 fsanitize-address-use-after-scope, 1, 1

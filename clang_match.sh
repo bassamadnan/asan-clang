@@ -4,7 +4,7 @@
 FLAGS=(
   "fsanitize=address"
   "fno-omit-frame-pointer"
-  "fsanitize-recover=address"
+  "fsanitize-recover"
   "fsanitize-address-use-after-scope"
 )
 
