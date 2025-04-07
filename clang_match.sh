@@ -6,14 +6,37 @@ FLAGS=(
   "fno-omit-frame-pointer"
   "fsanitize-recover"
   "fsanitize-address-use-after-scope"
+  "fsanitize=undefined"
+  "fno-sanitize-recover=all"
+  "fsanitize=float-divide-by-zero"
+  "fsanitize=float-cast-overflow"
+  "fno-sanitize=null"
+  "fno-sanitize=alignment"
+  "Wall"
+  "Wextra"
 )
 
 # Alternative strings to look for
 ALTERNATIVES=(
-  "SanitizerKind::Address"
-  "fno-omit-frame-pointer"
-  "SanitizerKind::Address.*recover"
-  "AsanUseAfterScope"
+  "SanitizerKind::Address|Address"
+  "flag_omit_frame_pointer|frame_pointer"
+  "RecoverableKinds|SanitizerKind::Address.*recover"
+  "AsanUseAfterScope|flag_sanitize_address_use_after_scope"
+  "SanitizerKind::Undefined|Undefined"
+  "fno-sanitize-recover|RecoverableKinds"
+  "float.*divide.*zero|FloatDivideByZero"
+  "float.*cast.*overflow|FloatCastOverflow"
+  "Null.*sanitizer|SanitizerKind::Null"
+  "Alignment.*sanitizer|SanitizerKind::Alignment"
+  "Wall"
+  "Wextra|W_Group"
+)
+
+# Combined flags that need to be used together
+COMBINED_FLAGS=(
+  "fsanitize-address-use-after-scope:fsanitize=address"
+  "fsanitize=float-divide-by-zero:fsanitize=undefined"
+  "fsanitize=float-cast-overflow:fsanitize=undefined"
 )
 
 BASEDIR="clang_history"
@@ -30,12 +53,22 @@ for VERSION_DIR in "$BASEDIR"/*; do
     
     # Create a file for the results
     echo "Version: $VERSION" > "$RESULT_FILE"
-    echo "flag_name, options_present, sanitizer_present" >> "$RESULT_FILE"
+    echo "flag_name, options_present, sanitizer_present, notes" >> "$RESULT_FILE"
     
     # Check for each flag
     for i in "${!FLAGS[@]}"; do
       FLAG="${FLAGS[$i]}"
       ALT="${ALTERNATIVES[$i]}"
+      NOTES=""
+      
+      # Check for combined flag dependencies
+      for COMBINED in "${COMBINED_FLAGS[@]}"; do
+        IFS=':' read -r CFLAG DEPENDENCY <<< "$COMBINED"
+        if [[ "$FLAG" == "$CFLAG" ]]; then
+          NOTES="Requires $DEPENDENCY to work properly"
+          break
+        fi
+      done
       
       # Check in Options.td if it exists
       OPTIONS_PRESENT=0
@@ -56,7 +89,7 @@ for VERSION_DIR in "$BASEDIR"/*; do
       fi
       
       # Write results to file
-      echo "$FLAG, $OPTIONS_PRESENT, $SANITIZER_PRESENT" >> "$RESULT_FILE"
+      echo "$FLAG, $OPTIONS_PRESENT, $SANITIZER_PRESENT, $NOTES" >> "$RESULT_FILE"
     done
     
     echo "Processed version $VERSION"

@@ -1,6 +1,14 @@
 Version: 9.5.0
-flag_name, present_in_common_opt
-fsanitize=, 1
-fno-omit-frame-pointer, 1
-fsanitize-recover=, 1
-fsanitize-address-use-after-scope, 1
+flag_name, present_in_common_opt, notes
+fsanitize=address, 1, 
+fno-omit-frame-pointer, 1, 
+fsanitize-recover=, 1, 
+fsanitize-address-use-after-scope, 1, Requires fsanitize=address to work properly
+fsanitize=undefined, 1, 
+fno-sanitize-recover=all, 0, 
+fsanitize=float-divide-by-zero, 0, Requires fsanitize=undefined to work properly
+fsanitize=float-cast-overflow, 0, Requires fsanitize=undefined to work properly
+fno-sanitize=null, 0, 
+fno-sanitize=alignment, 0, 
+Wall, 0, 
+Wextra, 1, 
